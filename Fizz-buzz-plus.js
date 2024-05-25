@@ -36,3 +36,21 @@ Hint: What is the relation to the numbers given in the list and the length of th
 
 
 // Solution
+
+function fizzbuzzPlusPlus(numbers, words) {
+  let result = [];
+  let n = 1;
+  for (number of numbers){n *= number}
+  for (let i = 1; i <= n; i++) {
+    let newWords = [];
+    for (j = 0; j < words.length; j++){
+      if (i % numbers[j] === 0) {newWords.push(words[j])}
+    }
+    if (newWords.length === 0) {
+      result.push(i)
+    } else {
+      result.push(newWords.join(""))
+    }
+}
+  return result;
+}
