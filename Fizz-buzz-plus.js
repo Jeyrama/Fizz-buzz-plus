@@ -33,3 +33,6 @@ Things to note:
 
 Hint: What is the relation to the numbers given in the list and the length of the list?
 */
+
+
+// Solution
