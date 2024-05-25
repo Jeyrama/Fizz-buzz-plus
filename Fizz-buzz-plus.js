@@ -54,3 +54,5 @@ function fizzbuzzPlusPlus(numbers, words) {
 }
   return result;
 }
+
+// or
