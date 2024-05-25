@@ -56,3 +56,10 @@ function fizzbuzzPlusPlus(numbers, words) {
 }
 
 // or
+
+const fizzbuzzPlusPlus = (nums, words) => Array.from(
+  { length: nums.reduce((a, b) => a * b) + 1}, 
+  (_, i) => nums.reduce((a, n, j) => (
+    a + (i % n ? '' : words[j])
+  ), '') || i
+).slice(1);
